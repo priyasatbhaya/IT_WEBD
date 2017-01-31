@@ -1,0 +1,111 @@
+			#header
+			{
+				background-color:#242626;
+				text-align:center;
+				color:#F9F9F9;
+				font-family: 'Orbitron', sans-serif;
+				
+				
+			}
+			
+			body
+			{
+			
+				background-color: #F1EDE7;
+				
+			}
+			
+			#form
+			{
+		
+				color:#232525;
+				background-color: #D2CDBD;
+				font-family: 'Play', sans-serif;
+				float:left;
+				margin:auto;
+				border-radius:10px;
+				padding:10;
+				font-weight:bold;
+				width:400px;
+
+			
+			}
+			
+			
+		
+			#formfull
+		
+			{
+				  position: fixed;
+				  top: 50%;
+				  left: 50%;
+				  border:3px dashed #C2BEB1;
+				  border-radius:10px;
+				  transform: translate(-50%, -50%);
+			}
+				
+			
+
+			
+			#a{
+				float:right;
+			}
+			
+			
+			
+			#form select{
+				float:right;
+			}
+			
+
+			
+			#form input[type="text"] {
+				border: 1px solid #FFFFFF;
+				font-size: 16px;
+				padding: 5px;width: 200px;
+			}
+			
+			#form input[type="email"] {
+				border: 1px solid #FFFFFF;
+				font-size: 16px;
+				padding: 5px;width: 200px;
+			}
+			
+			#form input[type="password"] {
+				border: 1px solid #FFFFFF;
+				font-size: 16px;
+				padding: 5px;
+				width: 200px;
+			}
+			#form input[type="button"] {
+				border: 0px;
+			}
+			#form select[type="dropdown"]
+			{
+				
+				border: 1px solid #FFFFFF;
+				font-size: 16px;
+				padding: 5px;width: 200px;
+			
+			}
+			
+			#form textarea[type=address]
+			{
+			
+				border: 1px solid #FFFFFF;
+				font-size: 16px;
+				padding: 5px;width: 200px;
+			
+			}
+			
+			#form input[type=button] {
+				padding:5px 15px; 
+				background:#64625E; 
+				border:0 none;
+				cursor:pointer;
+				border-radius: 5px;
+				margin-top:30px;
+				color:white;
+				
+
+			}
