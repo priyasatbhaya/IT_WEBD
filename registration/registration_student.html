@@ -39,11 +39,11 @@
 			
 			<form name="student_signup_form" onsubmit="return validateForm()" method="post">
 
-				<p>User Name: <input name="username"type="text" id="a" placeholder="Your Name"></p>
-				<p>Date of Birth: <input name="dob" type="text" id="a" placeholder="dd/mm/yyyy"></p>
-				<p>Age <input name="age" type="text" id="a" onclick ="getAge()"></p>
-				Gender: <div id="a">Male: <input type="radio" name="gender" value="m">
-				Female: <input type="radio" name="gender" value="f"></div>
+				<p>User Name: <input name="username"type="text" id="a" placeholder="Your Name" required="required"></p>
+				<p>Date of Birth: <input name="dob" type="date" id="a" placeholder="dd/mm/yyyy" required="required"></p>
+				Gender: <div id="x"><div id="x1"><input type="radio" name="gender" value="f"> Female</div>
+				<input type="radio" name="gender" value="m">Male</div>
+				<p>Age <input name="age" type="text" id="a" onclick ="getAge()" required="required"></p>
 				<p>Branch: 
 				
 					<select type="dropdown" name="list" id="a">
@@ -62,12 +62,14 @@
 					</select>
 				
 				</p>
-				<p>Registration No: <input name="regno" type="text" id="a" onclick="getReg()"></p>
-				<p>E-mail Id: <input name="email" type="email" id="a" placeholder="sriharshashm@gmail.com"></p>
-				<p>Password: <input name="password" type="password" id="a" placeholder="*********"></p>
-				<p>Retype-Password: <input name="repassword" type="password" id="a" placeholder="*********"></p>
-				<p>Contact No: <input type="text" id="a" placeholder="7076316076"></p>
-				<p>Address: <textarea type="address" id="a" placeholder="Room-445, Hall-1, NIT,Durgapur"></textarea>
+				<p>Registration No: <input name="regno" type="text" id="a" onclick="getReg()" required="required"></p>
+				<p>E-mail Id: <input name="email" type="email" id="a" placeholder="sriharshashm@gmail.com" required="required"></p>
+				<p>Password: <input name="password" type="password" id="a" placeholder="*********" required="required"></p>
+				<p>Retype-Password: <input name="repassword" type="password" id="a" placeholder="*********" required="required"></p>
+				<p>Contact No: <input name="cno" type="text" id="a" placeholder="7076XXXXXX" required="required"></p>
+				Hobbies: <div id="x"><div id="x1"><input type="checkbox"> Music</div>
+				<input type="checkbox">Cricket</div>
+				<p>Address: <textarea name="addr" type="address" id="a" placeholder="Room-445, Hall-1, NIT,Durgapur"></textarea>
 				<br>
 				<br>
 				<input type="submit" id="a" value="SIGN UP">
@@ -78,3 +80,4 @@
 	</body>
 	
 </html>
+

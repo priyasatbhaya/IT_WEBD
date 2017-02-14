@@ -1,29 +1,67 @@
 function validateForm() {
+	
+	var errors=[];
+	
     var x = document.forms["admin_signup_form"]["username"].value;
-    if (x == "") {
-        alert("User Name must be filled out");
-        return false;
+	var x_len=x.length;
+	var regex=/^[0-9]+$/;
+	console.log(x_len);
+	if (x == "") {
+        errors.push("Name must be filled out");
     }
-    var x = document.forms["admin_signup_form"]["email"].value;
-    if (x == "") {
-        alert("Email must be filled out");
-        return false;
-    }
+    if (x.match(regex))
+	{
+		errors.push("User name Must not input numbers!!");
+	}
+	else if(x_len < 5 || x_len >20)
+	{
+		errors.push("Please enter the name in range of 5-20 characters");
+	}
+    
+	
     var x = document.forms["admin_signup_form"]["password"].value;
+	x_len=x.length;
     var y = document.forms["admin_signup_form"]["repassword"].value;
-    if (x == "") {
-        alert("Password must be filled out");
-        return false;
+	if (x == "") {
+        errors.push("Password must be filled out");
+    
     }
-    if(x!=y){
-        alert("Password does not match");
-        return false;
-    }
+	if(x_len < 8 || x_len >20)
+	{
+		errors.push("Please enter the password in range of 8-20 characters");
+		
+	}
+	else if(x!=y){
+        errors.push("Password does not match");
+        
+		}
+    
     var x = document.forms["admin_signup_form"]["adminid"].value;
     if (x == "") {
-        alert("Registration Number must be filled out");
-        return false;
+        errors.push("AdminID must be filled out");
+        
     }
+	
+	var x = document.forms["admin_signup_form"]["cno"].value;
+	var regex=/^[0-9]+$/;
+	if (!x.match(regex))
+	{
+		errors.push("Contact number must contain only numbers!!");
+	}
+	
+	
+	if(errors.length > 0)
+	{
+		var msg = "ERRORS:\n\n";
+		for(var i=0; i<errors.length; i++)
+		{
+			msg+=errors[i] + "\n";
+		}
+		alert(msg);
+		return false;
+	}
+	else return true;
+	
 }
 
 function getAge(){

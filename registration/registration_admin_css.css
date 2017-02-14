@@ -125,6 +125,15 @@
 				color : white;
 			}
 			
+			#form input[type="date"] {
+				border: none;
+				font-size: 16px;
+				padding: 5px;
+				width: 200px;
+				background-color:#0D2635;
+				color : white;
+			}
+			
 			#form input[type="email"] {
 				border: none;
 				font-size: 16px;
@@ -132,6 +141,10 @@
 				width: 200px;
 				background-color:#0D2635;
 				color:white;
+			}
+			
+			#form input[type="radio"] {
+				margin-top:5px;
 			}
 			
 			#form input[type="password"] {
@@ -170,7 +183,7 @@
 				background:#44C1A9; 
 				border:0 none;
 				cursor:pointer;
-				margin:50 -10 10 60;
+				margin:50 10 10 60;
 				color:white;
 				font-weight:bold;
 				font-size:15px;
@@ -193,3 +206,39 @@
 				border-color: #44C1A9;
 				box-shadow: 0 0 10px #44C1A9;
 			}
+			
+			#x,#x1{
+				
+				float:right;
+				margin-top:5px;
+				
+			}
+			
+			#x1{
+				
+				margin-right:28px;
+				margin-left:30px;
+				margin-top:-1px;
+			}
+			
+			#y{
+				
+				position:relative;
+				top:-30px;
+				left:100px;
+			}
+			
+			#j{
+				
+				float:left;
+			}
+			
+			#y{
+				
+				float:right;
+				margin-top:48px;
+				margin-right:23px;
+			}
+			
+		
+			
