@@ -41,12 +41,12 @@
 
 				<p>User Name: <input name="username"type="text" id="a" placeholder="Your Name"></p>
 				<p>Date of Birth: <input name="dob" type="text" id="a" placeholder="dd/mm/yyyy"></p>
+				<p>Age <input name="age" type="text" id="a" onclick ="getAge()"></p>
 				Gender: <div id="a">Male: <input type="radio" name="gender" value="m">
 				Female: <input type="radio" name="gender" value="f"></div>
-				<p>Registration No: <input name="regno" type="text" id="a" placeholder="2014XXXX"></p>
 				<p>Branch: 
 				
-					<select type="dropdown" id="a">
+					<select type="dropdown" name="list" id="a">
 					
 					<option value="0">--Select--</option>
 					<option value='bt'>BT</option>
@@ -62,6 +62,7 @@
 					</select>
 				
 				</p>
+				<p>Registration No: <input name="regno" type="text" id="a" onclick="getReg()"></p>
 				<p>E-mail Id: <input name="email" type="email" id="a" placeholder="sriharshashm@gmail.com"></p>
 				<p>Password: <input name="password" type="password" id="a" placeholder="*********"></p>
 				<p>Retype-Password: <input name="repassword" type="password" id="a" placeholder="*********"></p>
