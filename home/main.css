@@ -1,0 +1,100 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Varela Round', sans-serif;
+  font-weight: 100;
+}
+
+.container {
+  margin: 0 auto;
+  
+}
+/* Header */
+
+.header {
+  background-image: url("../ckt2.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 800px;
+  text-align: center;
+}
+
+.header .container {
+  position: relative;
+  top: 200px;
+}
+
+.header h1 {
+  color: #09FBFA;
+  text-shadow: 5px 5px 5px #000;
+  font-size: 80px;
+  line-height: 100px;
+  margin-top: 0;
+  margin-bottom: 80px;
+  text-transform: uppercase;
+}
+
+.header p {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 8px;
+  margin-bottom: 40px;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.btn {
+  color: #fff;
+  background: #273234;
+  padding: 10px 40px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #09FBFA;
+  cursor: pointer;
+  transition: background .5s;
+}
+/* Nav */
+
+			.nav {
+			  background: #1A4254;
+			  height: 80px;
+			  width: 100%;
+			  position :fixed;
+			  font-family: 'Varela Round';
+			  z-index:1;
+			  
+			}
+
+			.nav ul {
+			  margin: 0 auto;
+			  padding: 0;
+			  text-align: center;
+			}
+
+			.nav ul li {
+			  color: #44C1A9;
+			  display: inline-block;
+			  height: 80px;
+			  line-height: 80px;
+			  padding: 0 10px;
+			}
+
+			.nav ul li:hover {
+			  background: #44C1A9;
+			  cursor: pointer;
+			  transition: background .5s;
+			}
+
+			a{
+
+				text-decoration:none;
+				color:#fff;
+				
+			}
