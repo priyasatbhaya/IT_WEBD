@@ -106,7 +106,7 @@
 				text-decoration:underline;
 			}
 			
-			#form input[type=button] {
+			#form input[type=submit] {
 				padding:5px 15px; 
 				background:#44C1A9; 
 				border:0 none;
@@ -119,7 +119,7 @@
 
 			}
 			
-			#form input[type=button]:hover{
+			#form input[type=submit]:hover{
 				
 				background: #0D2635;
 				cursor: pointer;
