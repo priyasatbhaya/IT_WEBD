@@ -5,7 +5,6 @@ function validateForm() {
     var x = document.forms["admin_signup_form"]["username"].value;
 	var x_len=x.length;
 	var regex=/^[0-9]+$/;
-	console.log(x_len);
 	if (x == "") {
         errors.push("Name must be filled out");
     }

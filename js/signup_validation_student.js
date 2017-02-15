@@ -5,7 +5,6 @@ function validateForm() {
 	var x = document.forms["student_signup_form"]["username"].value;
 	var x_len=x.length;
 	var regex=/^[0-9]+$/;
-	console.log(x_len);
 	if (x == "") {
         errors.push("Name must be filled out");
     }
@@ -42,7 +41,7 @@ function validateForm() {
     
     var x = document.forms["student_signup_form"]["regno"].value;
     if (x == "") {
-        errors.push("AdminID must be filled out");
+        errors.push("registration number must be filled out");
 		
         
     }

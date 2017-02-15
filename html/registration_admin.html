@@ -1,15 +1,13 @@
 <html>
 	<head>	
 	
-		<title>Registration Page</title>
+		<title>Registration Page for admin</title>
 		<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-		<link type="text/css" rel="stylesheet" href="registration_student_css.css"/>
 		<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
-		<style type="text/css"></style>
-		<script src="validation-student.js"></script>
-		
+		<link type="text/css" rel="stylesheet" href="../css/registration_admin_css.css"/>
+		<script src="../js/signup_validation_admin.js"></script>
 	</head>
 	
 	<body>
@@ -19,10 +17,10 @@
 		<div class="container">
 			
 				<ul>
-					<li><a href="../home/main.html">Home</a></li>
-					<li><a href="../registration/registration_admin.html">Register-admin</a></li>
-					<li><a href="../login/login_student.html">Login-student</a></li>
-					<li><a href="../login/login_admin.html">Login-admin</a></li>
+					<li><a href="../html/main.html">Home</a></li>
+					<li><a href="../html/registration_student.html">Register-Student</a></li>
+					<li><a href="../html/login_admin.html">Login-admin</a></li>
+					<li><a href="../html/login_student.html">Login-student</a></li>
 				</ul>
 			
 			</div>
@@ -31,22 +29,24 @@
 		
 		<div id="formfull">
 		<div id="form">
-		<div id="heading" >
 			
-				<p><span id="student_style">Student </span><span id="registration_style">Registration</span></p>
+			<div id="heading" >
 			
-		</div>
+				<p><span id="admin_style">Admin </span><span id="registration_style">Registration</span></p>
 			
-			<form name="student_signup_form" onsubmit="return validateForm()" method="post">
+			</div>
+			
+			<form name="admin_signup_form" onsubmit="return validateForm()" method="post">
 
-				<p>User Name: <input name="username"type="text" id="a" placeholder="Your Name" required="required"></p>
+				<p>User Name: <input name="username" type="text" id="a" placeholder="Your Name" required="required"></p>
 				<p>Date of Birth: <input name="dob" type="date" id="a" placeholder="dd/mm/yyyy" required="required"></p>
 				Gender: <div id="x"><div id="x1"><input type="radio" name="gender" value="f"> Female</div>
 				<input type="radio" name="gender" value="m">Male</div>
-				<p>Age <input name="age" type="text" id="a" onclick ="getAge()" required="required"></p>
+				<p>Age: <input name ="age" type="text" id="a" onclick="getAge()"></p>
+				
 				<p>Branch: 
 				
-					<select type="dropdown" name="list" id="a">
+					<select type="dropdown" name="list" id="a" required="required">
 					
 					<option value="0">--Select--</option>
 					<option value='bt'>BT</option>
@@ -62,16 +62,12 @@
 					</select>
 				
 				</p>
-				<p>Registration No: <input name="regno" type="text" id="a" onclick="getReg()" required="required"></p>
+				<p>Admin ID: <input name="adminid" type="text" id="a" onclick="getAdminid()"></p>
 				<p>E-mail Id: <input name="email" type="email" id="a" placeholder="sriharshashm@gmail.com" required="required"></p>
 				<p>Password: <input name="password" type="password" id="a" placeholder="*********" required="required"></p>
 				<p>Retype-Password: <input name="repassword" type="password" id="a" placeholder="*********" required="required"></p>
-				<p>Contact No: <input name="cno" type="text" id="a" placeholder="7076XXXXXX" required="required"></p>
-				Hobbies: <div id="x"><div id="x1"><input type="checkbox"> Music</div>
-				<input type="checkbox">Cricket</div>
-				<p>Address: <textarea name="addr" type="address" id="a" placeholder="Room-445, Hall-1, NIT,Durgapur"></textarea>
-				<br>
-				<br>
+				<p>Contact No: <input name="cno"type="text" id="a" placeholder="94930XXXXX" required="required"></p>
+				<p>Address: <textarea name="addr" type="address" id="a" placeholder="Room-445, Hall-1, NIT,Durgapur" required="required"></textarea>
 				<input type="submit" id="a" value="SIGN UP">
 			</form>
 		</div>
@@ -80,4 +76,3 @@
 	</body>
 	
 </html>
-
