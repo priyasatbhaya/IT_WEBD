@@ -152,6 +152,15 @@
 				color:white;
 			}
 			
+			#form input[type="file"] {
+				border: none;
+				font-size: 16px;
+				padding: 5px;
+				width: 200px;
+				background-color:#0D2635;
+				color:white;
+			}
+			
 			#form select[type="dropdown"]
 			{
 				
