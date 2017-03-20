@@ -116,7 +116,7 @@ function dob_out(){
 }
 
 function branch_out(){
-	var x = document.forms["student_signup_form"]["list"].value;
+	var x = document.forms["student_signup_form1"]["list"].value;
 	if(x=="")
 	{
 		alert("please select a proper branch");
@@ -233,7 +233,7 @@ function cno_in(){
 	if(x == "")
 	{
 		document.forms["student_signup_form"]["cno"].style.backgroundColor ="#0D2635";
-		document.forms["student_signup_form"]["cno"].placeholder = "94930XXXXX";
+		document.forms["student_signup_form"]["cno"].placeholder = "7076XXXXXX";
 		document.forms["student_signup_form"]["cno"].style.border ="none";
 	}
 }
@@ -258,6 +258,109 @@ function cno_out(){
 }
 
 
+function tboard_out(){
+	var x = document.forms["student_signup_form"]["t_board"].value;
+	if(x=="")
+	{
+		alert("please select a proper 10th board");
+	}
+	return false;
+}
+
+function tmarks_out(){
+	var x = document.forms["student_signup_form"]["t_marks"].value;
+	if (x == "") {
+        document.forms["student_signup_form"]["t_marks"].placeholder = "Marks must be filled";
+		document.forms["student_signup_form"]["t_marks"].style.border ="2px solid red";
+		return false;
+    
+    }
+	
+}
+
+function tmarks_in(){
+	var x = document.forms["student_signup_form"]["t_marks"].value;
+	if(x == "")
+	{
+		document.forms["student_signup_form"]["t_marks"].style.backgroundColor ="#0D2635";
+		document.forms["student_signup_form"]["t_marks"].placeholder = "Your Marks";
+		document.forms["student_signup_form"]["t_marks"].style.border ="none";
+	}
+	
+}
+
+
+function tyear_out(){
+	var x = document.forms["student_signup_form"]["t_year"].value;
+	if(x=="")
+	{
+		alert("please select a proper 10th passing year");
+	}
+	return false;
+}
+
+function sboard_out(){
+	var x = document.forms["student_signup_form"]["s_board"].value;
+	if(x=="")
+	{
+		alert("please select a proper 12th board");
+	}
+	return false;
+}
+
+function smarks_out(){
+	var x = document.forms["student_signup_form"]["s_marks"].value;
+	if (x == "") {
+        document.forms["student_signup_form"]["s_marks"].placeholder = "Marks must be filled";
+		document.forms["student_signup_form"]["s_marks"].style.border ="2px solid red";
+		return false;
+    
+    }
+	
+}
+
+function cgpa_in(){
+	var x = document.forms["student_signup_form"]["cgpa"].value;
+	if(x == "")
+	{
+		document.forms["student_signup_form"]["cgpa"].style.backgroundColor ="#0D2635";
+		document.forms["student_signup_form"]["cgpa"].placeholder = "Your CGPA (till date)";
+		document.forms["student_signup_form"]["cgpa"].style.border ="none";
+	}
+	
+}
+
+function cgpa_out(){
+	var x = document.forms["student_signup_form"]["cgpa"].value;
+	if (x == "") {
+        document.forms["student_signup_form"]["cgpa"].placeholder = "CGPA must be filled";
+		document.forms["student_signup_form"]["cgpa"].style.border ="2px solid red";
+		return false;
+    
+    }
+	
+}
+
+function smarks_in(){
+	var x = document.forms["student_signup_form"]["s_marks"].value;
+	if(x == "")
+	{
+		document.forms["student_signup_form"]["s_marks"].style.backgroundColor ="#0D2635";
+		document.forms["student_signup_form"]["s_marks"].placeholder = "Your Marks";
+		document.forms["student_signup_form"]["s_marks"].style.border ="none";
+	}
+	
+}
+
+
+function syear_out(){
+	var x = document.forms["student_signup_form"]["s_year"].value;
+	if(x=="")
+	{
+		alert("please select a proper 12th passing year");
+	}
+	return false;
+}
 
 function getAge(){
 	var dateString = document.forms["student_signup_form"]["dob"].value;
@@ -293,4 +396,19 @@ function getReg() {
 	if(dpt=="mme")
 		document.forms["student_signup_form"]["regno"].value = "14/MME/";
 
+}
+
+function next_step1() {
+document.getElementById("first").style.display = "none";
+document.getElementById("second").style.display = "block";
+document.getElementById("aca").style.display = "block";
+document.getElementById("stu").style.display = "none";
+
+}
+
+function prev_step1() {
+document.getElementById("second").style.display = "none";
+document.getElementById("first").style.display = "block";
+document.getElementById("aca").style.display = "none";
+document.getElementById("stu").style.display = "block";
 }

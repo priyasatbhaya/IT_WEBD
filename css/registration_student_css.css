@@ -46,14 +46,16 @@
 				padding-bottom:20px;
 			}
 			
-			#student_style{
+			#student_style,
+			#aca_style{
 				
 				font-size:40px;
 				font-family: 'PT Sans', sans-serif;
 				font-weight:bold;
 			}
 			
-			#registration_style{
+			#registration_style,
+			#det_style{
 				
 				font-size:40px;
 				font-family: 'PT Sans', sans-serif;
@@ -61,6 +63,10 @@
 				text-decoration-line:underline;
 				text-decoration-style: dashed;
 				
+			}
+			
+			#aca{
+				display:none;
 			}
 			
 			body
@@ -196,6 +202,32 @@
 
 			}
 			
+			#form input[type=button] {
+				padding:5px 15px; 
+				background:#44C1A9; 
+				border:0 none;
+				cursor:pointer;
+				margin:50 -10 10 60;
+				color:white;
+				font-weight:bold;
+				font-size:15px;
+				font-family:'Play', sans-serif;
+
+			}
+			
+			#form input[type=reset] {
+				padding:5px 15px; 
+				background:#44C1A9; 
+				border:0 none;
+				cursor:pointer;
+				margin:50 -10 10 60;
+				color:white;
+				font-weight:bold;
+				font-size:15px;
+				font-family:'Play', sans-serif;
+
+			}
+			
 			
 			#form input[type=submit]:hover{
 				
@@ -203,6 +235,21 @@
 				cursor: pointer;
 				transition: background .5s;	
 			}
+			
+			#form input[type=button]:hover{
+				
+				background: #0D2635;
+				cursor: pointer;
+				transition: background .5s;	
+			}
+			
+			#form input[type=reset]:hover{
+				
+				background: #0D2635;
+				cursor: pointer;
+				transition: background .5s;	
+			}
+			
 			
 			input:focus,
 			textarea:focus{
@@ -243,3 +290,27 @@
 				margin-top:48px;
 				margin-right:23px;
 			}
+			#second{
+				display:none;
+			}
+			
+		
+			
+			#pre,
+			#res{
+				float:left;
+				position:relative;
+				left:-20px;
+			}
+			
+			#fin,
+			#nex{
+				position:relative;
+				left:21%;
+				top:-10px;
+			}
+			
+			#res,#nex{
+				width:20%;
+			}
+			

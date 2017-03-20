@@ -18,7 +18,7 @@
 			
 				<ul>
 					<li><a href="../html/main.html">Home</a></li>
-					<li><a href="../html/registration_student.html">Register-Student</a></li>
+					<li><a href="../html/registration_student.php">Register-Student</a></li>
 					<li><a href="../html/login_admin.html">Login-admin</a></li>
 					<li><a href="../html/login_student.html">Login-student</a></li>
 				</ul>

@@ -2,7 +2,7 @@
 
 if($_POST)
 {
-		//print_r($_POST);
+		print_r($_POST);
 		$dbhost = "localhost";
 		$dbuser = "root";
 		$dbpass = "harsha444";
