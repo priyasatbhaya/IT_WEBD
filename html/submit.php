@@ -36,11 +36,11 @@
 		<div class="container">
 			
 				<ul>
-					<li><a href="../html/main.html">Home</a></li>
+					<li><a href="../html/main.php">Home</a></li>
 					<li><a href="../html/registration_admin.php">Register-admin</a></li>
 					<li><a href="../html/registration_student.php">Register-Student</a></li>
-					<li><a href="../html/login_student.html">Login-student</a></li>
-					<li><a href="../html/login_admin.html">Login-admin</a></li>
+					<li><a href="../html/login_student.php">Login-student</a></li>
+					<li><a href="../html/login_admin.php">Login-admin</a></li>
 				</ul>
 			
 		</div>
@@ -52,7 +52,7 @@
 		<!--<h1><marquee scrollamount="25" behavior="alternate"><marquee width="900">Successfully Submitted</marquee></marquee></h1>
 		-->
 		<h1>Successfully Submitted</h1>
-		<p><a href="../html/login_student.html">Click here to login!!</a></p>
+		<p><a href="../html/login_student.php">Click here to login!!</a></p>
 		<marquee direction="up" behavior="alternate"><marquee scrollamount="15" direction="right" behavior="alternate"><img src="animat-rocket.gif" /></marquee></marquee>
 	</body>
 	

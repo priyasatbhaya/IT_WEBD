@@ -22,7 +22,7 @@
 					<li><a href="../html/main.html">Home</a></li>
 					<li><a href="../html/registration_admin.php">Register-admin</a></li>
 					<li><a href="../html/registration_student.php">Register-student</a></li>
-					<li><a href="../html/login_student.html">Login-student</a></li>
+					<li><a href="../html/login_student.php">Login-student</a></li>
 				</ul>
 			
 			</div>

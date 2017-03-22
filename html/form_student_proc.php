@@ -38,6 +38,15 @@ if($_POST)
 		$cgpa=$_POST['cgpa'];
 		
 		
+		$query="select * from students where email = '$email'";
+		$result=mysqli_query($connection,$query);
+		$numOfRows=mysqli_num_rows($result);
+		if($numOfRows>0)
+		{
+			echo("Email already exists!!");
+			mysqli_close($connection);
+		}
+		else{
 		$query = " 
 			INSERT INTO `students` (`username`, `date`, `Gender`, `age`, `branch`, `regno`, `email`,
 			`pass`, `contact`, `address`,`t_board`,`t_year`,`t_marks`,`s_board`,`s_year`,`s_marks`,`degree`,`cgpa`) VALUES
@@ -53,6 +62,8 @@ if($_POST)
 		}
 			
 		mysqli_close($connection);
+		
+		}
 }
 ?>
 

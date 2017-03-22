@@ -22,7 +22,7 @@
 					<li><a href="../html/main.html">Home</a></li>
 					<li><a href="../html/registration_admin.php">Register-admin</a></li>
 					<li><a href="../html/registration_student.php">Register-student</a></li>
-					<li><a href="../html/login_admin.html">Login-admin</a></li>
+					<li><a href="../html/login_admin.php">Login-admin</a></li>
 				</ul>
 			
 			</div>
@@ -37,10 +37,11 @@
 			
 			</div>
 			
-			<form name="student_login_form" onsubmit="return validateForm()" method="post">
+			<form action="login_student_proc.php" name="student_login_form" submit="return validateForm()" method="post">
 				
 				<p>E-mail Id: <input name="email" type="email" placeholder="sriharshashm@gmail.com" required="required" onfocusin="email_in()" onfocusout="email_out()"></p>
 				<p>Password: <input name="password" type="password" placeholder="*********" required="required" onfocusin="pass_in()" onfocusout="pass_out()"></p>
+				<div id="x1"><input name="stayLoggedIn" type="checkbox" value=0 ></div><div id="x">Stay signed in</div>
 				<br>
 				<br>
 				<a href="#"><p id="f_p">Forgot Password?</p></a>

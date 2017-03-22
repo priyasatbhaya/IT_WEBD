@@ -176,3 +176,16 @@
 				border-color: #44C1A9;
 				box-shadow: 0 0 10px #44C1A9;
 			}
+			
+			
+			#x1{
+				
+				position:relative;
+				right:45%;
+				top:2px;
+			}
+			
+			#x{
+				position:relative;
+				left:55%;
+			}
