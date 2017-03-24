@@ -107,6 +107,9 @@
 					<select type="dropdown" name="s_year" id="a" required="required" onfocusout="syear_out()">
 					
 					<option value="">Select Year</option>
+					<option value='2016'>2016</option>
+					<option value='2015'>2015</option>
+					<option value='2014'>2014</option>
 					<option value='2013'>2013</option>
 					<option value='2012'>2012</option>
 					<option value='2011'>2011</option>
@@ -135,7 +138,7 @@
 					</select>
 				
 				</p>
-				<p>Registration No: <input name="regno" type="text" id="a" onclick="getReg()" required="required" onfocusin="id_in()"></p>
+				<p>Roll No: <input name="regno" type="text" id="a" onclick="getReg()" required="required" onfocusin="id_in()"></p>
 				<p>CGPA: <input name="cgpa" type="text" id ="a" placeholder="Your CGPA (till date)" required="required" onfocusin="cgpa_in()" onfocusout="cgpa_out()">
 				<p>Remarks: <textarea name="rem" type="address" id="a" placeholder="Please provide remarks (if any)"></textarea>
 				<br>

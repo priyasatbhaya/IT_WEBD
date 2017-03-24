@@ -6,6 +6,7 @@ if($_POST)
 		$dbhost = "localhost";
 		$dbuser = "root";
 		$dbpass = "harsha444";
+		//$dbpass = "ubuntu";
 		$dbname = "studentdb";
 		
 		$connection = mysqli_connect($dbhost,$dbuser,$dbpass,$dbname);
