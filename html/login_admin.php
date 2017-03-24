@@ -38,9 +38,9 @@
 			
 		</div>
 			
-			<form name="admin_login_form" onsubmit="return validateForm()" method="post">
+			<form action="login_admin_proc.php" name="admin_login_form" onsubmit="return validateForm()" method="post">
 				
-				<p>E-mail Id: <input name="email" type="email" placeholder="sriharshashm@gmail.com" required="required" onfocusin="email_in()" onfocusout="email_out()"></p>
+				<p>User Name: <input name="email" type="text" placeholder="sriharshashm@gmail.com" required="required" onfocusin="email_in()" onfocusout="email_out()"></p>
 				<p>Password: <input name="password" type="password" placeholder="*********" required="required" onfocusin="pass_in()" onfocusout="pass_out()"></p>
 				<br>
 				<br>
