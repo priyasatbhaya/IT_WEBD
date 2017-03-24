@@ -134,7 +134,7 @@
 				color : white;
 			}
 			
-			#form input[type="email"] {
+			#form input[type="text"] {
 				border: none;
 				font-size: 16px;
 				padding: 5px;
