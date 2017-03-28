@@ -4,7 +4,6 @@
 	
 	if(isset($_SESSION['id']))
 	{
-		echo "<p>Logged In! <a href = 'logout.php'>Log out</a></p>";
 
 		$dbhost = "localhost";
 		$dbuser = "root";
@@ -29,18 +28,13 @@
 			die("Database query failed!");
 		}
 		else{
-    		// output data of each row
-    		while($row = $result->fetch_assoc()) {
-        		echo "Roll no: " . $row["regno"]. " - Name: " . $row["username"]. "<br>";
-    		}
-		}	
-		mysqli_close($connection);
-		
-		
-	}
-	else
-	{
-		header("Location: login_student.php");
+    		echo "<table><tr><th>ID</th><th>Name</th><th>Roll no</th><th>Profile</th></tr>";
+	    // output data of each row
+	    while($row = $result->fetch_assoc()) {
+	        echo "<tr><td>".$row["id"]."</td><td>".$row["username"]."</td><td>".$row["regno"]."</td><td>"."<a href = 'loggedinpage.php'>".$row["email"]."</a><input name=\"accpet\" type=\"submit\"> </td></tr>";
+			}	
+		mysqli_close($connection);	
+		}
 	}
 
 ?>
