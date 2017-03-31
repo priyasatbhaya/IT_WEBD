@@ -134,13 +134,13 @@
 				color : white;
 			}
 			
-			#form input[type="text"] {
+			#form input[type="email"] {
 				border: none;
 				font-size: 16px;
 				padding: 5px;
 				width: 200px;
 				background-color:#0D2635;
-				color:white;
+				color:#fff;
 			}
 			
 			

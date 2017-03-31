@@ -6,7 +6,7 @@ if($_POST)
 		/*
 		if(isset($_SESSION['id']))
 		{
-			header("Location: loggedinpage.php");
+			header("Location: loggedin_adminpage.php");
 		}*/
 		//print_r($_POST);
 
@@ -15,7 +15,7 @@ if($_POST)
 		$dbuser = "root";
 		$dbpass = "harsha444";
 		//$dbpass = "ubuntu";
-		$dbname = "admindb";
+		$dbname = "studentdb";
 		
 		$connection = mysqli_connect($dbhost,$dbuser,$dbpass,$dbname);
 		
@@ -36,13 +36,15 @@ if($_POST)
 		
 		$row = mysqli_fetch_array($result);
 		
+		print_r($row);
+		
 		if(isset($row))
 		{
-			if($pass == $row['pass'])
+			if($pass == $row['password'])
 			{
 				$_SESSION['id']=$row['id'];
 				
-				header("Location: loggedinadminpage.php");
+				header("Location: loggedin_adminpage.php");
 				
 			}
 			else

@@ -1,12 +1,10 @@
 <?php
 if($_POST)
 {
-
 		session_start();
-		/*
-		if(isset($_SESSION['id']))
+		/*if(!isset($_SESSION['id']))
 		{
-			header("Location: loggedinpage.php");
+			header("Location: login_student.php");
 		}*/
 		//print_r($_POST);
 
@@ -28,7 +26,8 @@ if($_POST)
 		//perform query
 		$email=$_POST['email'];
 		$pass=$_POST['password'];
-		
+		//$pass=md5($pass);
+		echo($pass);
 		$query = "select * from students where email='$email'";
 		
 		$result = mysqli_query($connection, $query);
@@ -40,9 +39,7 @@ if($_POST)
 			if($pass == $row['pass'])
 			{
 				$_SESSION['id']=$row['id'];
-				
 				header("Location: loggedinpage.php");
-				
 			}
 			else
 			{

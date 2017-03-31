@@ -6,7 +6,7 @@ if($_POST)
 		$dbhost = "localhost";
 		$dbuser = "root";
 		$dbpass = "harsha444";
-		$dbname = "admindb";
+		$dbname = "studentdb";
 		
 		$connection = mysqli_connect($dbhost,$dbuser,$dbpass,$dbname);
 		
@@ -31,7 +31,7 @@ if($_POST)
 		
 		
 		$query = " 
-			INSERT INTO `admins` (`username`, `date`, `Gender`, `age`, `branch`, `adminId`, `email`,
+			INSERT INTO `admin` (`username`, `date`, `Gender`, `age`, `branch`, `adminId`, `email`,
 			`password`, `contact`, `address`) VALUES ('$username','$birthdate','$gender','$age','$branch','$id','$email','$pass','$contact','$address');";
 		
 		$result = mysqli_query($connection,$query);

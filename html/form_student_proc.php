@@ -27,6 +27,7 @@ if($_POST)
 		$id=$_POST['regno'];
 		$email=$_POST['email'];
 		$pass=$_POST['password'];
+		//$pass=md5($pass);
 		$contact=$_POST['cno'];
 		$address=$_POST['addr'];
 		$t_board=$_POST['t_board'];

@@ -1,7 +1,5 @@
 <?php
-
-session_destroy();
-
+session_start();
+$_SESSION['id']=null;
 header("Location: login_student.php");
-
 ?>
