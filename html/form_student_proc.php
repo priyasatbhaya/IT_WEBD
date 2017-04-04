@@ -51,8 +51,8 @@ if($_POST)
 		else{
 		$query = " 
 			INSERT INTO `students` (`username`, `date`, `Gender`, `age`, `branch`, `regno`, `email`,
-			`pass`, `contact`, `address`,`t_board`,`t_year`,`t_marks`,`s_board`,`s_year`,`s_marks`,`degree`,`cgpa`) VALUES
-			('$username','$birthdate','$gender','$age','$branch','$id','$email','$pass','$contact','$address','$t_board','$t_year','$t_marks','$s_board','$s_year','$s_marks','$degree','$cgpa');";
+			`pass`, `contact`, `address`,`t_board`,`t_year`,`t_marks`,`s_board`,`s_year`,`s_marks`,`degree`,`cgpa`,`status`) VALUES
+			('$username','$birthdate','$gender','$age','$branch','$id','$email','$pass','$contact','$address','$t_board','$t_year','$t_marks','$s_board','$s_year','$s_marks','$degree','$cgpa',0);";
 		
 		$result = mysqli_query($connection,$query);
 		

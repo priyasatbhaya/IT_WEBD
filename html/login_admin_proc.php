@@ -3,11 +3,10 @@ if($_POST)
 {
 
 		session_start();
-		/*
-		if(isset($_SESSION['id']))
+		if(!isset($_SESSION['id']))
 		{
-			header("Location: loggedin_adminpage.php");
-		}*/
+			header("Location: new_admin_login.php");
+		}
 		//print_r($_POST);
 
 
@@ -44,7 +43,7 @@ if($_POST)
 			{
 				$_SESSION['id']=$row['id'];
 				
-				header("Location: loggedin_adminpage.php");
+				header("Location: new_admin_login.php");
 				
 			}
 			else

@@ -47,7 +47,7 @@
 			$s_marks = ($row["s_marks"]);
 			$degree = ($row["degree"]);
 			$cgpa = ($row["cgpa"]);
-			$pic="anime.png";
+			$pic="nit_icon.png";
 			if($branch == "it")
 			{
 				$branch="INFORMATION TECHNOLOGY";

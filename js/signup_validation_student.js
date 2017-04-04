@@ -73,7 +73,9 @@
 function name_out(){
 	var x = document.forms["student_signup_form"]["username"].value;
 	var x_len=x.length;
-	var regex=/^[0-9]+$/;
+	//var regex=/^[0-9]+$/;
+	//var regex =/^[A-Za-z.-]+(\s*[A-Za-z.-]+)*$/;
+	var regex=/[1234567890!@#$%^&*]/;
     if (x.match(regex))
 	{
 		document.forms["student_signup_form"]["username"].style.border ="2px solid red";
@@ -82,7 +84,7 @@ function name_out(){
 		return false;
 	}
 	if (x == "") {
-        document.forms["student_signup_form"]["username"].placeholder = "Name must be filled";
+        document.forms["student_signup_form"]["username"].placeholder = "Please fill the name";
 		document.forms["student_signup_form"]["username"].style.border ="2px solid red";
 		return false;
     
@@ -90,7 +92,9 @@ function name_out(){
 	
 	if(x_len < 5 || x_len >20)
 	{
-		alert("Name must be between 5 and 20 characters!")
+		document.forms["student_signup_form"]["username"].style.border ="2px solid red";
+		document.forms["student_signup_form"]["username"].value ="";
+		document.forms["student_signup_form"]["username"].placeholder = "5-20 characters only!!";
 		return false;
 	}
 }
@@ -167,12 +171,22 @@ function email_in(){
 
 function email_out(){
 	var x = document.forms["student_signup_form"]["email"].value;
+	var regex=/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;;
+	var x_bool= regex.test(x);
+	//alert(x_bool);
+	if(x_bool== false)
+	{
+		document.forms["student_signup_form"]["email"].value = "";
+		document.forms["student_signup_form"]["email"].placeholder = "enter a valid email";
+		document.forms["student_signup_form"]["email"].style.border ="2px solid red";	
+		
+	}
 	if(x=="")
 	{
 		document.forms["student_signup_form"]["email"].placeholder = "email can't be empty";
 		document.forms["student_signup_form"]["email"].style.border ="2px solid red";
 	}
-	return false;
+	else return false;
 }
 
 function pass_in(){
@@ -196,7 +210,10 @@ function pass_out(){
     }
 	if(x_len < 8 || x_len >20)
 	{
-		alert("Please enter the password in range of 8-20 characters");
+   		document.forms["student_signup_form"]["password"].value = "";
+		document.forms["student_signup_form"]["password"].placeholder = "must be 8-20 chars";
+		document.forms["student_signup_form"]["password"].style.border ="2px solid red";
+		return false;
 		return false;
 		
 	}
@@ -223,7 +240,9 @@ function repass_out(){
     }
 	if(x!=y)
 	{
-		alert("passwords do not match!!");
+        document.forms["student_signup_form"]["repassword"].value = "";
+        document.forms["student_signup_form"]["repassword"].placeholder = "Incorrect Input!!";
+		document.forms["student_signup_form"]["repassword"].style.border ="2px solid red";
 		return false;
 	}
 }
@@ -269,12 +288,27 @@ function tboard_out(){
 
 function tmarks_out(){
 	var x = document.forms["student_signup_form"]["t_marks"].value;
+	var regex=/[a-zA-Z!@#$%^&*]/;
 	if (x == "") {
         document.forms["student_signup_form"]["t_marks"].placeholder = "Marks must be filled";
 		document.forms["student_signup_form"]["t_marks"].style.border ="2px solid red";
 		return false;
     
     }
+	if(x.match(regex))
+	{
+		document.forms["student_signup_form"]["t_marks"].value = "";
+		document.forms["student_signup_form"]["t_marks"].placeholder = "enter valid marks";
+		document.forms["student_signup_form"]["t_marks"].style.border ="2px solid red"
+	}
+	if(x>100 || x<0)
+	{
+		document.forms["student_signup_form"]["t_marks"].value = "";
+		document.forms["student_signup_form"]["t_marks"].placeholder = "enter valid marks";
+		document.forms["student_signup_form"]["t_marks"].style.border ="2px solid red"
+		
+	}
+
 	
 }
 
@@ -310,17 +344,32 @@ function sboard_out(){
 
 function smarks_out(){
 	var x = document.forms["student_signup_form"]["s_marks"].value;
+	var regex=/[a-zA-Z!@#$%^&*]/;
 	if (x == "") {
         document.forms["student_signup_form"]["s_marks"].placeholder = "Marks must be filled";
 		document.forms["student_signup_form"]["s_marks"].style.border ="2px solid red";
 		return false;
     
     }
+	if(x.match(regex))
+	{
+		document.forms["student_signup_form"]["s_marks"].value = "";
+		document.forms["student_signup_form"]["s_marks"].placeholder = "enter valid marks";
+		document.forms["student_signup_form"]["s_marks"].style.border ="2px solid red"
+	}
+	if(x>100 || x<0)
+	{
+		document.forms["student_signup_form"]["s_marks"].value = "";
+		document.forms["student_signup_form"]["s_marks"].placeholder = "enter valid marks";
+		document.forms["student_signup_form"]["s_marks"].style.border ="2px solid red"
+		
+	}
 	
 }
 
 function cgpa_in(){
 	var x = document.forms["student_signup_form"]["cgpa"].value;
+
 	if(x == "")
 	{
 		document.forms["student_signup_form"]["cgpa"].style.backgroundColor ="#0D2635";
@@ -332,12 +381,27 @@ function cgpa_in(){
 
 function cgpa_out(){
 	var x = document.forms["student_signup_form"]["cgpa"].value;
+	var regex=/[a-zA-Z!@#$%^&*()}{\|,/?-~`]/;
+	//var regex =/0987654321./;
 	if (x == "") {
         document.forms["student_signup_form"]["cgpa"].placeholder = "CGPA must be filled";
 		document.forms["student_signup_form"]["cgpa"].style.border ="2px solid red";
 		return false;
     
     }
+	if(x.match(regex))
+	{
+		document.forms["student_signup_form"]["cgpa"].value = "";
+		document.forms["student_signup_form"]["cgpa"].placeholder = "enter valid CGPA";
+		document.forms["student_signup_form"]["cgpa"].style.border ="2px solid red"
+	}
+	if(x>10 || x<0)
+	{
+		document.forms["student_signup_form"]["cgpa"].value = "";
+		document.forms["student_signup_form"]["cgpa"].placeholder = "enter valid CGPA";
+		document.forms["student_signup_form"]["cgpa"].style.border ="2px solid red"
+		
+	}
 	
 }
 
@@ -372,6 +436,17 @@ function getAge(){
     {
         age--;
     }
+	if(age<0)
+	{
+		document.forms["student_signup_form"]["age"].value ="";
+        document.forms["student_signup_form"]["age"].placeholder = "enter a valid age";
+		document.forms["student_signup_form"]["age"].style.border ="2px solid red";
+		return false;
+	}
+	if(age>=0)
+	{
+		document.forms["student_signup_form"]["age"].style.border = "none";
+	}
     document.forms["student_signup_form"]["age"].value = age;
 }
 

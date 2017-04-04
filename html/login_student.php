@@ -20,7 +20,7 @@
 			
 				<ul>
 					<li><a href="../html/main.html">Home</a></li>
-					<li><a href="../html/registration_admin.php">Register-admin</a></li>
+					<!--li><a href="../html/registration_admin.php">Register-admin</a></li-->
 					<li><a href="../html/registration_student.php">Register-student</a></li>
 					<li><a href="../html/login_admin.php">Login-admin</a></li>
 				</ul>

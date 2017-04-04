@@ -20,7 +20,7 @@
 			
 				<ul>
 					<li><a href="../html/main.html">Home</a></li>
-					<li><a href="../html/registration_admin.php">Register-admin</a></li>
+					<!--li><a href="../html/registration_admin.php">Register-admin</a></li-->
 					<li><a href="../html/login_student.php">Login-student</a></li>
 					<li><a href="../html/login_admin.php">Login-admin</a></li>
 				</ul>
@@ -41,7 +41,7 @@
 
 				<div id="first">
 				
-				<p>User Name: <input name="username"type="text" id="a" placeholder="Your Name" required="required" onfocusin="name_in()" onfocusout="name_out()"></p>
+				<p>Name: <input name="username"type="text" id="a" placeholder="Your Name" required="required" onfocusin="name_in()" onfocusout="name_out()"></p>
 				<p>Date of Birth: <input name="dob" type="date" id="a" placeholder="dd/mm/yyyy" required="required" onfocusout="dob_out()"></p>
 				Gender: <div id="x"><div id="x1"><input type="radio" name="gender" value="f"> Female</div>
 				<input type="radio" name="gender" value="m" checked>Male</div>

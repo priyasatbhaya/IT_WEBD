@@ -26,12 +26,22 @@ function email_in(){
 
 function email_out(){
 	var x = document.forms["student_login_form"]["email"].value;
+	var regex=/\S+@\S+\.\S+/;
+	var x_bool= regex.test(x);
+	//alert(x_bool);
+	if(x_bool== false)
+	{
+		document.forms["student_login_form"]["email"].value = "";
+		document.forms["student_login_form"]["email"].placeholder = "enter a valid email";
+		document.forms["student_login_form"]["email"].style.border ="2px solid red";	
+		
+	}
 	if(x=="")
 	{
 		document.forms["student_login_form"]["email"].placeholder = "email can't be empty";
 		document.forms["student_login_form"]["email"].style.border ="2px solid red";
 	}
-	return false;
+	else return false;
 }
 
 function pass_in(){

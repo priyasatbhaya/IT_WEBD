@@ -2,10 +2,10 @@
 if($_POST)
 {
 		session_start();
-		/*if(!isset($_SESSION['id']))
+		if(!isset($_SESSION['id']))
 		{
 			header("Location: login_student.php");
-		}*/
+		}
 		//print_r($_POST);
 
 
@@ -27,16 +27,24 @@ if($_POST)
 		$email=$_POST['email'];
 		$pass=$_POST['password'];
 		//$pass=md5($pass);
-		echo($pass);
+	   
 		$query = "select * from students where email='$email'";
 		
 		$result = mysqli_query($connection, $query);
 		
 		$row = mysqli_fetch_array($result);
+
+		//checking if the statusis one
+
 		
+
 		if(isset($row))
 		{
-			if($pass == $row['pass'])
+			if($row['status'] == 0)
+			{
+				echo("Invalid");
+			}
+			else if($pass == $row['pass'])
 			{
 				$_SESSION['id']=$row['id'];
 				header("Location: loggedinpage.php");

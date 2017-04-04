@@ -37,7 +37,7 @@
 			
 				<ul>
 					<li><a href="../html/main.php">Home</a></li>
-					<li><a href="../html/registration_admin.php">Register-admin</a></li>
+					<!--li><a href="../html/registration_admin.php">Register-admin</a></li-->
 					<li><a href="../html/registration_student.php">Register-Student</a></li>
 					<li><a href="../html/login_student.php">Login-student</a></li>
 					<li><a href="../html/login_admin.php">Login-admin</a></li>
