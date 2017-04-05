@@ -26,7 +26,7 @@ if($_POST)
 		//perform query
 		$email=$_POST['email'];
 		$pass=$_POST['password'];
-		//$pass=md5($pass);
+		$pass=md5($pass);
 	   
 		$query = "select * from students where email='$email'";
 		
